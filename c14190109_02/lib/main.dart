@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         body: Container(
           // padding: EdgeInsets.all(15),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 padding: const EdgeInsets.only(left: 20),
@@ -67,13 +68,15 @@ class MyApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      color: Colors.green,
+                      color: Colors.lightGreen,
                       child: Column(
                         children: [
                           const Icon(Icons.science),
                           Column(
                             children: const [
-                              Text("Science"),
+                              Text("Science",
+                                  style:
+                                      TextStyle(fontWeight: FontWeight.bold)),
                               Text("Chapter 4"),
                             ],
                           ),
@@ -87,11 +90,12 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      color: Colors.green,
+                      color: Colors.lightGreen,
                       child: Column(
                         children: [
                           const Icon(Icons.star),
-                          const Text("Design"),
+                          const Text("Design",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                           const Text("Chapter 5"),
                           Row(
                             children: const [
@@ -103,11 +107,12 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      color: Colors.green,
+                      color: Colors.lightGreen,
                       child: Column(
                         children: [
                           const Icon(Icons.book),
-                          const Text("Biology"),
+                          const Text("Biology",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                           const Text("Chapter 1"),
                           Row(
                             children: const [
@@ -119,11 +124,12 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      color: Colors.green,
+                      color: Colors.lightGreen,
                       child: Column(
                         children: [
                           const Icon(Icons.fireplace),
-                          const Text("Cooking"),
+                          const Text("Cooking",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                           const Text("Chapter 3"),
                           Row(
                             children: const [
@@ -160,16 +166,18 @@ class MyApp extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              const Icon(Icons.science),
+                              const Icon(Icons.report),
                               Column(
                                 children: const [
-                                  Text("Basic of Designing"),
+                                  Text("Basic of Designing",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold)),
                                   Text("1 hour, 25 mins")
                                 ],
                               ),
                             ],
                           ),
-                          const Icon(Icons.science)
+                          const Icon(Icons.play_arrow)
                         ],
                       ),
                     ),
@@ -181,18 +189,18 @@ class MyApp extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              const Icon(Icons.science),
+                              const Icon(Icons.book),
                               Column(
-                                children: [
-                                  const Text("Human Respiratory System"),
-                                  Row(
-                                    children: const [Text("4 hour, 10 mins")],
-                                  )
+                                children: const [
+                                  Text("Human Respiratory System",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold)),
+                                  Text("4 hour, 10 mins")
                                 ],
                               ),
                             ],
                           ),
-                          const Icon(Icons.science)
+                          const Icon(Icons.play_arrow)
                         ],
                       ),
                     ),
@@ -204,16 +212,18 @@ class MyApp extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              const Icon(Icons.science),
+                              const Icon(Icons.book_online),
                               Column(
                                 children: const [
-                                  Text("Integration & Differentiation"),
+                                  Text("Integration & Differentiation",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold)),
                                   Text("2 hour, 37 mins")
                                 ],
                               ),
                             ],
                           ),
-                          const Icon(Icons.science)
+                          const Icon(Icons.play_arrow)
                         ],
                       ),
                     )
@@ -230,12 +240,12 @@ class MyApp extends StatelessWidget {
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.business),
-              label: 'Business',
+              icon: Icon(Icons.explore),
+              label: 'Explore',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.school),
-              label: 'School',
+              icon: Icon(Icons.chat),
+              label: 'Chat',
             ),
           ],
         ),
